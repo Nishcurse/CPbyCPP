@@ -43,7 +43,10 @@ int main()
     // x[index] will return the char at that index new char can also be assigned 
     cout<<sizeof(x)<<endl;//can return the size of string
     cout<<x.length()<<endl;//can return the length of string
+    /*getline(); --> Important stuff*/
     getline(cin, y); //stdIn as Whole Line
+    cin.ignore(); //reset cursor to the starting of the next line 
+    
     
     return 0;
 }
