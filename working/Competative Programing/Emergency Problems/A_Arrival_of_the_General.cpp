@@ -18,7 +18,7 @@ int main()
         {
             Badawala = arr[i];
         }
-        else if (arr[i] < Chotawala)
+        if (arr[i] < Chotawala)
         {
             Chotawala = arr[i];
         }
