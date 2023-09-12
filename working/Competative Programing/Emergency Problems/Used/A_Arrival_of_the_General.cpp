@@ -1,4 +1,4 @@
-/*link-" https://codeforces.com/problemset/problem/144/A" */
+/*link-" https://codeforces.com/problemset/problem/144/A" Gopesh ka code */
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -18,7 +18,7 @@ int main()
         {
             Badawala = arr[i];
         }
-        else if (arr[i] < Chotawala)
+        if (arr[i] < Chotawala)
         {
             Chotawala = arr[i];
         }
