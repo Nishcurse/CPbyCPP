@@ -1,5 +1,9 @@
 #include <iostream>
 using namespace std;
+// CPP Reference 
+void incremeant(int &a){//After & now it passes the reference of the a so the actual value gets affected
+    a++;
+}
 int main()
 {
     // int a = 32; // Global variable
@@ -46,7 +50,10 @@ int main()
     /*getline(); --> Important stuff*/
     getline(cin, y); //stdIn as Whole Line
     cin.ignore(); //reset cursor to the starting of the next line 
-    
-    
+    /*CPP References */
+    int a =12;
+    incremeant(a);
+    cout<<a<<endl;
+    /*Some Cpp Functions --> Swap(a,b); or max(a,b);   */
     return 0;
 }
