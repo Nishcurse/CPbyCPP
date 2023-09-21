@@ -1,10 +1,13 @@
-#include<bits/stdc++.h>
-using namespace std ;
-int main() 
+#include <bits/stdc++.h>
+using namespace std;
+int main()
 {
-    int b,c;cin>>b>>c;
-    int i;cin>>i;
-    int  kaamka = (b*i-c)%10;
-    cout<<kaamka<<endl;
-    return 0;
+    int n ; cin>>n;
+    set <int> s;
+    for (int i=0;i<n;i++){
+    int temp;
+    cin >> temp;
+    s.insert(temp);
+    cout<<s.size();
+    }
 }
