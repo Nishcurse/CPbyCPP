@@ -1,32 +1,31 @@
-/*"problemset/problem/1399/A" By Nishu ❤️ You lil bitch pls work this time */
-#include <bits/stdc++.h>
-#define int long long
+/*"problemset/problem/1399/A" By Nishu ❤️ Trying to optimising the code*/
+#include<bits/stdc++.h>
+#pragma GCC target("sse4")
+#define in long long 
 using namespace std;
-int32_t main () {
-    int n ; cin>>n;
-    while(n--){
-        int c ; cin>>c ;
-        bool check =false ;
-        if(c==1){
-            cout<<"YES"<<endl;
-            continue;
+int main() {
+    in t;cin>>t;
+    while(t--){
+        in c;cin>>c;
+        int a =  1 ;
+        int r[c];
+        for(in i=0;i<c;i++){
+            cin>>r[i];
         }
-        vector<int> arr(c);
-        for(int i=0;i<c;i++){
-            cin>>arr[i];
-        }
-        sort(arr.begin(),arr.end());
-        for(int i=0;i<c-1;i++){
-            if(arr[i+1]-arr[i]>1){
-                check = true;
-                break;
+        sort(r,r+c);
+        for(in i=1;i<c;i++){
+            if(r[i]-r[i-1]>1){
+                a=0;
             }
         }
-        if(check){
-            cout<<"NO"<<endl;
-        }else {
-            cout<<"YES"<<endl;
+        if(a!=0){
+            cout<<"YES\n";
+        }else{
+            cout<<"NO\n";
         }
     }
     return 0;
 }
+
+
+
