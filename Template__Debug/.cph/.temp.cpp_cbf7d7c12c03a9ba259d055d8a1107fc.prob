@@ -1,0 +1,1 @@
+{"name":"Local: temp","url":"u:\\CPP\\Template__Debug\\temp.cpp","tests":[{"id":1696443694157,"input":"10\na\nb\nc\nd\ne\nf\ng\nh\ni\nj","output":"NO\nNO\nYES\nYES\nYES\nYES\nNO\nNO\nNO\nNO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"u:\\CPP\\Template__Debug\\temp.cpp","group":"local","local":true}
