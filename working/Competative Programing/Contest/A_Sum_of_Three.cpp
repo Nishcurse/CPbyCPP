@@ -10,8 +10,17 @@ using namespace std;
 int main () {
     HeyNishuu
     TestCase {
-        
-        
+        int a;cin>>a;
+        if(a<7 || a==9){
+            cout<<"NO"<<"\n";
+        }else{
+                cout<<"YES"<<"\n";
+            if(a%3==0){
+                cout<<1<<" "<<4<<" "<<a-5<<"\n";
+            }else{
+                cout<<1<<" "<<2<<" "<<a-3<<"\n";
+            }
+        }
     }
     return 0;
 }
