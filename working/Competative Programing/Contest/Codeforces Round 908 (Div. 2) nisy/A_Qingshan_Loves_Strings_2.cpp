@@ -28,10 +28,32 @@ freopen("error.txt", "w", stderr);
 #endif
 /*CONFIG PART END_________________________________________________________________________________________________*/
 Testcases{
-  int i;cin>>i;
-  cout<<i<<"\n";
-  debug(i);
-}
+    ll n,ocnt=0,zcnt=0,stepcnt=0 ;cin>>n;
+    string a;cin>>a;
+    for(int i=0;i<n;i++){
+        if(a[i]=='0'){
+            zcnt++;
+        }else{
+            ocnt++;
+        }
+    }
+    if(ocnt!=zcnt){
+        cout<<-1<<"\n";
+    }else{
+        // for(int i=0;i<n/2;i++){
+        //     if(a[i]==a[a.length()-i-1]){
+        //         a = a.substr(i+1,a.length()-1);
+        //         debug(a);
+        //     }else{
+        //         a = a.substr(i+1,a.length()-1);
+        //         debug(a);
+        //     }
+        }
+       a = a.substr(0,a.length()-1);
+       cout<<a<<"\n";
+       debug(a);
+    }
+
 return 0;
 }
 

@@ -28,9 +28,9 @@ freopen("error.txt", "w", stderr);
 #endif
 /*CONFIG PART END_________________________________________________________________________________________________*/
 Testcases{
-  int i;cin>>i;
-  cout<<i<<"\n";
-  debug(i);
+    int i;cin>>i;
+    cout<<i<<"\n";
+    debug(i);
 }
 return 0;
 }

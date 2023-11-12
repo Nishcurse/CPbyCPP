@@ -28,10 +28,31 @@ freopen("error.txt", "w", stderr);
 #endif
 /*CONFIG PART END_________________________________________________________________________________________________*/
 Testcases{
-  int i;cin>>i;
-  cout<<i<<"\n";
-  debug(i);
-}
+    ll n,pos=9,no=9;cin>>n;
+    vector<int> v;
+    if(n>45){
+        cout<<-1<<"\n";
+    }else{
+        for(int j=9;j>0;j--){
+                if(n<=0){
+                    break;
+                }else{
+                    if(n>j){
+                        n-=j;
+                        v.push_back(j);
+                    }else{
+                        v.push_back(n);
+                        n==0;
+                        break;
+                    }
+                }
+            }
+        }
+        for(int i=0;i<v.size();i++){
+            cout<<v[v.size()-i-1];
+        }cout<<"\n";
+    }
+        
 return 0;
 }
 

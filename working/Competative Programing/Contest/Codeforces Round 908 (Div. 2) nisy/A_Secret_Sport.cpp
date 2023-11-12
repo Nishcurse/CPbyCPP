@@ -28,10 +28,10 @@ freopen("error.txt", "w", stderr);
 #endif
 /*CONFIG PART END_________________________________________________________________________________________________*/
 Testcases{
-  int i;cin>>i;
-  cout<<i<<"\n";
-  debug(i);
-}
+    ll a,acnt=0,bcnt=0;cin>>a;
+    string s;cin>>s;
+    cout<<s[a-1]<<"\n";
+    }
 return 0;
 }
 

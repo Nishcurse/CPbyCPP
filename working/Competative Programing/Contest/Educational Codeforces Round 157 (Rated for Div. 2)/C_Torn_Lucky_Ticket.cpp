@@ -28,6 +28,7 @@ int sumtindesx(string s,int t){
     }
     return sum;
 }
+int rrr[6][46];
 int main() {
 // Config CODE___________________________________________________________________________________________________
 NishuisYours
@@ -37,29 +38,20 @@ freopen("output.txt", "w", stdout);
 freopen("error.txt", "w", stderr); 
 #endif
 //CONFIG PART END_________________________________________________________________________________________________
-ll t,p=0;cin>>t;
- string arr[t];
-for(int i=0;i<t;i++){
+ll n,p=0;cin>>n;
+ string arr[n];
+for(int i=0;i<n;i++){
+    ll sum=0;
     cin>>arr[i];
-}
-vector<vector<int>> v;
-for(int i=0;i<t;i++){
-    string a = arr[i];int sum=0;
-    for(int i=0;i<a.length();i++){
-        sum+= (a[i]-'0');
+    string s = arr[i];
+    for(int j=0;j<s.length();j++){
+        sum+=(s[i]-'0');
     }
-    v[a.length()][sum]++;
+    rrr[s.length()][sum]++;
 }
-for(int i=0;i<t;i++){
-    if(arr[i].length()%2==0){
-        if(arr[i].length()%2==2){
-            p += v[2][sumtindesx(arr[i],2)]
-        }else{
-            p+= v[4][]
-        }
+debug(rrr[2][2]);
 
-    }
-}
+
 
 
     return 0;

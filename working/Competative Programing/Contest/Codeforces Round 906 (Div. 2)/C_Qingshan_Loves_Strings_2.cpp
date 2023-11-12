@@ -1,3 +1,4 @@
+/* if you are reading this go get a life man */
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
@@ -28,10 +29,52 @@ freopen("error.txt", "w", stderr);
 #endif
 /*CONFIG PART END_________________________________________________________________________________________________*/
 Testcases{
-  int i;cin>>i;
-  cout<<i<<"\n";
-  debug(i);
+    ll n,ocnt=0,zcnt=0,stepcnt=0,l=0,r=0 ;cin>>n;
+    string a,b="01";cin>>a;
+    if(n%2!=0){
+        cout<<-1<<"\n";
+    }else{
+    vector<ll> vec; 
+    for(int i=0;i<n;i++){
+        if(a[i]=='0'){
+            zcnt++;
+        }else{
+            ocnt++;
+        }
+    }
+    if(ocnt!=zcnt){
+        cout<<-1<<"\n";
+    }else{
+        for (int i = 0; i < a.length() / 2; i++) {
+            debug(i);
+    debug((int)a.length());
+    debug(a);
+    if (a[i] == a[a.length() - i - 1]) {
+        debug("i am running");
+        stepcnt++;
+        if (a[i] == '0') {
+            debug("Equal Zero");
+            vec.push_back((a.length() - i - 1) + 1);
+            a.insert(a.length() - i , b);
+            debug(a);
+            debug((int)a.length());
+        } else {
+            debug("Equal One");
+            vec.push_back(i);
+            a.insert(i, b);
+            debug(a);
+            debug((int)a.length());
+        }
+    }
 }
-return 0;
+cout<<stepcnt<<"\n";
+    for(int i:vec){
+        cout<<i<<" ";
+    }cout<<"\n";
+    }
+    
 }
+}
+}
+
 

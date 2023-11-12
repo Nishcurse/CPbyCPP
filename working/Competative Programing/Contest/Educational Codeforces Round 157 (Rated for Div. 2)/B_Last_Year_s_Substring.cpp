@@ -1,3 +1,4 @@
+//  @nisuuisyours - 12-11-2023 07:33  
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
@@ -28,10 +29,15 @@ freopen("error.txt", "w", stderr);
 #endif
 /*CONFIG PART END_________________________________________________________________________________________________*/
 Testcases{
-  int i;cin>>i;
-  cout<<i<<"\n";
-  debug(i);
+    ll n;cin>>n;
+    string s;cin>>s;
+    debug(s);
+    if((s[0]=='2'&&s[1]=='0'&&s[n-1]=='0'&&s[n-2]=='2') || (s[0]=='2'&&s[1]=='0'&&s[2]=='2'&&s[3]=='0') || (s[0]=='2'&&s[1]=='0'&&s[2]=='2'&&s[n-1]=='0') || (s[0]=='2'&&s[n-3]=='0'&&s[n-1]=='0'&&s[n-2]=='2') || (s[n-4]=='2'&&s[n-3]=='0'&&s[n-1]=='0'&&s[n-2]=='2')){
+        cout<<"YES\n";
+    }else{
+        cout<<"NO\n";
+    }
 }
 return 0;
 }
-
+// (1000 * 1) - Tme Complexity is too gud actually better than loop approach
